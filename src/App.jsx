@@ -29,6 +29,9 @@ function CountryInfo() {
         setCountryInfo(data);
       } catch (err) {
         setError(err.message);
+        setTimeout(() => {
+        setError(null);
+        }, 5000);
       } finally {
         setLoading(false);
       }
@@ -49,6 +52,8 @@ function CountryInfo() {
           placeholder="Enter a country name"
           value={countryName}
           onChange={(e) => setCountryName(e.target.value)}
+          required
+          pattern="[A-Za-z ]+"
         />
         <button
           className="search-btn"
