@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../src/styles/country.css";
 
 function CountryInfo() {
-  const [countryName, setCountryName] = useState("");
+  const [countryName, setCountryName] = useState(" ");
   const [countryInfo, setCountryInfo] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
