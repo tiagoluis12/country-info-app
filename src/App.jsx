@@ -16,7 +16,7 @@ function CountryInfo() {
       try {
         // Make a request to your NodeJS backend to fetch country information
         const response = await fetch(
-          `http://localhost:3001/api/countries/${encodeURIComponent(
+          `https://country-info-back.onrender.com/api/countries/${encodeURIComponent(
             countryName
           )}`
         );
