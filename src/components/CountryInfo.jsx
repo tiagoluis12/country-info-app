@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/country.css";
-import SearchForm from "./SearchForm"; // Import the SearchForm component
-import CountryService from "./services/CountryService"; // Import the service
+import SearchForm from "../components/SearchForm"; // Import the SearchForm component
+import CountryService from "../components/services/CountryService"; // Import the service
 
 function CountryInfo() {
   const [countryName, setcountryName] = useState("");
