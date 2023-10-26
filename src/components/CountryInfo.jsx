@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/country.css";
-import SearchForm from "./SearchForm"; // Import the SearchForm component
-import CountryService from "./services/CountryService"; // Import the service
+import SearchForm from "./SearchForm";
+import CountryService from "./services/CountryService";
 
 function CountryInfo() {
   const [countryName, setcountryName] = useState("");
@@ -47,7 +47,7 @@ function CountryInfo() {
   return (
     <div className="container">
       <h1>Country Information - By Bounce insights</h1>
-      <SearchForm // Use the SearchForm component
+      <SearchForm //SearchForm component
         countryName={countryName}
         oncountryNameChange={setcountryName}
         onClear={handleClear}

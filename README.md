@@ -1,3 +1,33 @@
-# Getting Started with Create React App
+# Country Information App (FrontEnd)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend part of the "Country Information" project By Bounce Insights. It provides an input to search for a country by name and a list of countries that match the search criteria. When a country is selected, it displays information about the country, including its flag, name, population, region, subregion, capital, currencies, languages, and border countries.
+
+### Prerequisites
+
+- Node.js and npm (Node Package Manager) installed on your system.
+
+### Setup
+
+1. You can clone the repository to your local machine:
+
+git clone https://github.com/tiagoluis12/country-info-app
+
+## Start
+
+1. Navigate to the frontend directory:
+   cd country-information-app/frontend
+
+2. Install all dependencies: npm install
+
+3. To start the frontend, run the following command: npm start
+   This will launch the server, and the application will be accessible in your web browser at http://localhost:3000
+
+## Usage
+
+1. Open your web browser and navigate to http://localhost:3000.
+
+2. You'll see the Country Information App's main page.
+
+3. When you start typing in the search box, the list of countries will be filtered by the search criteria.
+
+4. Country information will be displayed on the page.
