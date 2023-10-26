@@ -22,6 +22,16 @@ git clone https://github.com/tiagoluis12/country-info-app
 3. To start the frontend, run the following command: npm start
    This will launch the server, and the application will be accessible in your web browser at http://localhost:3000
 
+### Testing
+
+Run Cypress tests: npx cypress run
+To navigate in Cypress browser and see the test, you have to follow the steps below:
+
+1. navegate into Specs
+2. Click on FrontendTest to go straight to the test screen. Then, you have to insert any country name inside the input to see the test running.
+
+OBS: The test code folder is in cypress/e2e/FrontendTest.cy.js
+
 ## Usage
 
 1. Open your web browser and navigate to http://localhost:3000.
