@@ -10,7 +10,7 @@ This is the frontend part of the "Country Information" project By Bounce Insight
 
 1. You can clone the repository to your local machine:
 
-git clone https://github.com/tiagoluis12/country-info-app
+git clone https://github.com/tiagoluis12/country-info-app.git
 
 ## Start
 
@@ -20,11 +20,13 @@ git clone https://github.com/tiagoluis12/country-info-app
 2. Install all dependencies: npm install
 
 3. To start the frontend, run the following command: npm start
-   This will launch the server, and the application will be accessible in your web browser at http://localhost:3000
+
+This will launch the server, and the application will be accessible in your web browser at http://localhost:3000
 
 ### Testing
 
 Run Cypress tests: npx cypress run
+
 To navigate in Cypress browser and see the test, you have to follow the steps below:
 
 1. navegate into Specs
@@ -34,7 +36,11 @@ OBS: The test code folder is in cypress/e2e/FrontendTest.cy.js
 
 ## Usage
 
-1. Open your web browser and navigate to http://localhost:3000.
+1. Open your web browser and navigate to http://localhost:3000. or
+
+## Hosting
+
+The frontend is hosted on Render. You can access the application through the link: https://country-info-front.onrender.com/
 
 2. You'll see the Country Information App's main page.
 
