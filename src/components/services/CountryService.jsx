@@ -1,6 +1,7 @@
-const API_BASE_URL = "https://country-info-back.onrender.com/api/countries";
+const API_BASE_URL = "https://countryinfo-backend.vercel.app/api/countries";
 
-// if you want to run locally use this URL above | const API_BASE_URL = "http://localhost:3001/api/countries";
+// If you want to run using locally, you have to change the URL in the line above to the following:
+// const API_BASE_URL = "http://localhost:3002/api/countries";
 
 const CountryService = {
   fetchCountryInfo: async (countryName) => {

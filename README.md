@@ -15,7 +15,7 @@ git clone https://github.com/tiagoluis12/country-info-app.git
 ## Start
 
 1. Navigate to the frontend directory:
-   cd country-information-app/frontend
+   cd frontend
 
 2. Install all dependencies: npm install
 
@@ -25,11 +25,12 @@ This will launch the server, and the application will be accessible in your web 
 
 ### Testing
 
-Run Cypress tests: npx cypress run
+Run Cypress tests: npx cypress open
+The Cypress panel will open, click on E2E testing, then select Start E2E Testing in Chrome.
 
 To navigate in Cypress browser and see the test, you have to follow the steps below:
 
-1. navegate into Specs
+1. click on Specs then
 2. Click on FrontendTest to go straight to the test screen. Then, you have to insert any country name inside the input to see the test running.
 
 OBS: The test code folder is in cypress/e2e/FrontendTest.cy.js
