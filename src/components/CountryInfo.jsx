@@ -1,56 +1,48 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/country.css";
 import SearchForm from "./SearchForm";
 import CountryService from "./services/CountryService";
 
 function CountryInfo() {
-  const [countryName, setcountryName] = useState("");
+  const [countryName, setCountryName] = useState("");
   const [CountryInfo, setCountryInfo] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchCountryInfo = async () => {
-      setLoading(true);
-      setError(null);
+  const handleSearch = async () => {
+    setLoading(true);
+    setError(null);
 
-      try {
-        const response = await CountryService.fetchCountryInfo(countryName);
+    try {
+      const response = await CountryService.fetchCountryInfo(countryName);
 
-        if (!response.ok) {
-          throw new Error("Country not found");
-        }
-
-        const data = await response.json();
-        setCountryInfo(data);
-        setError(null);
-      } catch (err) {
-        setError(err.message);
-        setTimeout(() => {
-          setError(null);
-        }, 5000);
-      } finally {
-        setLoading(false);
+      if (!response.ok) {
+        throw new Error("Country not found");
       }
-    };
 
-    if (countryName) {
-      fetchCountryInfo();
+      const data = await response.json();
+      setCountryInfo(data);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
     }
-  }, [countryName]);
+  };
 
   const handleClear = () => {
-    setcountryName("");
+    setCountryName("");
+    setCountryInfo(null);
     setError(null);
   };
 
   return (
     <div className="container">
       <h1>Country Information - By Bounce insights</h1>
-      <SearchForm //SearchForm component
+      <SearchForm
         countryName={countryName}
-        oncountryNameChange={setcountryName}
-        onClear={handleClear}
+        onCountryNameChange={setCountryName}
+        onSearch={handleSearch}
+        onClear={handleClear} 
       />
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}

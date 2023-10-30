@@ -15,6 +15,7 @@ git clone https://github.com/tiagoluis12/country-info-app.git
 ## Start
 
 1. Navigate to the frontend directory:
+   cd country-info
    cd frontend
 
 2. Install all dependencies: npm install
