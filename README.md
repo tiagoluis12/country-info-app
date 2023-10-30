@@ -42,7 +42,7 @@ OBS: The test code folder is in cypress/e2e/FrontendTest.cy.js
 
 ## Hosting
 
-The frontend is hosted on Render. You can access the application through the link: https://country-info-front.onrender.com/
+The frontend is hosted on Render. You can access the application through the link: https://country-info-app.onrender.com
 
 2. You'll see the Country Information App's main page.
 

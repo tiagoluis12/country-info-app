@@ -68,6 +68,9 @@ body{
   margin-left: 1em;
 
 }
+.error {
+  margin-top: -2em;
+}
 
 .infos {
   margin-top: 1.5em;

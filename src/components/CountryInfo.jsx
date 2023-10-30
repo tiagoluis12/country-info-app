@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/country.css";
 import SearchForm from "./SearchForm";
 import CountryService from "./services/CountryService";
+import LoadingSpinner from "./Loading";
 
 function CountryInfo() {
   const [countryName, setCountryName] = useState("");
@@ -44,8 +45,8 @@ function CountryInfo() {
         onSearch={handleSearch}
         onClear={handleClear} 
       />
-      {loading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
+      {loading && <LoadingSpinner />}
+      {error && <p className="error">Error: {error}</p>}
       {CountryInfo && (
         <div className="infos">
           <h2>{CountryInfo.name.common}</h2>
